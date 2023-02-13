@@ -1,0 +1,42 @@
+import java.io.*;
+import java.util.Scanner;
+class RectangleShape {
+    int length, width;
+ 
+    public RectangleShape() {
+        System.out.println("Constructor Called");
+        
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter length");
+        length = input.nextInt();
+        
+        
+        Scanner input1 = new Scanner(System.in);
+        System.out.println("Enter width");
+        width = input1.nextInt();
+         
+    }
+ protected void finalize()
+  {
+     System.out.println("object is garbage collected ");
+  }
+ 
+    int area() {
+        int a = length * width;
+        return a;
+     }
+
+    }
+ 
+
+
+public class cons 
+{
+    public static void main(String args[]) 
+   {
+        RectangleShape o1 = new RectangleShape();
+        System.out.println("Area of Rectangle : " + o1.area());
+ 
+    }
+
+}
